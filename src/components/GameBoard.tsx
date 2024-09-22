@@ -33,7 +33,7 @@ const GameBoard: React.FC = () => {
             setGameOver(true);
 
             setTimeout(() => {
-                alert('Congratulations! The ring has been found!');
+                alert('Congratulations! The smile has been found! You can continue pressing only after the "Reset".');
             }, 500);
         }
     };
@@ -46,7 +46,7 @@ const GameBoard: React.FC = () => {
 
     return (
         <div>
-            <div style={{ display: 'flex', flexWrap: 'wrap', width: '360px'}}>
+            <div className="cellBox">
                 {items.map((item, index) => (
                     <Cell
                         key={index}

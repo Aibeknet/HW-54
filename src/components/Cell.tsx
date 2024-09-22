@@ -16,7 +16,7 @@ const Cell: React.FC<CellProps> = ({index, onClick, hasItem, clicked}) => {
 
     return (
         <div onClick={handleClick} className={`cell ${clicked ? 'clicked' : ''}`}>
-            {clicked && hasItem ? 'o' : ''}
+            {clicked && hasItem ? '😉' : ''}
         </div>
     );
 };
